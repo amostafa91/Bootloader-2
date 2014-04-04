@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+      <title>Booterloader</title>
+
+      <!-- Load Bootloader -->        
+      <script src="static/js/bootloader.js"></script>      
+</head>
+   
+<body>
+       
+       <!-- Example One -->
+       <h1>Load CSS file and change background color.</h1>
+       
+       <a href="javascript:void(0);" onclick="boot('static/css/test.css');">Example One</a>
+       
+       
+       <!-- Example Two -->
+       <h1>Load javascript file</h1>
+       
+       <a href="javascript:void(0);" onclick="boot('static/js/test.js');">Example Two</a>
+       
+       <!-- Example Three -->
+       <h1>Bootloader callback function</h1>
+       
+       <a href="javascript:void(0);" onclick="boot({'load': [ 'static/css/tests.css' ], success: function(){ alert('Callback function.'); } });">Example Three</a>
+       
+</body>
+
+</html>
