@@ -53,10 +53,10 @@
           
           if ( type == 'object' && typeof data.load == 'object' )
           {
-               for ( var i in data.load )
+               data.load.forEach( function( value, index, array )
                {
-                   drop( data.load[ i ] );
-               }
+                   drop( value );
+               } );
                
                if ( data.success != undefined )
                {
